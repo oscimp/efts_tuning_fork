@@ -1,4 +1,4 @@
-# European Frequency and Time Seminar (EFTS) quartz tuning fork laboratory session.
+# <a href="https://efts.eu">European Frequency and Time Seminar (EFTS)</a> quartz tuning fork laboratory session.
 
 A quartz tuning fork packaged in a transparent casing is used to demonstrate
 * closed loop oscillation using a Negative Impedance Converter (NIC) circuit (<a href="oscillator/oscillateur_1night.png">Allan deviation</a> below $10^{-9}$ up to 30 s integration time).
@@ -33,5 +33,5 @@ Equivalent BvD model of the quartz tuning for:
 
 Quality factor $Q=\frac{1}{R1}\sqrt{\frac{L1}{C1}}=27700$
 
-Resonance frequency $f=\frac{1}{2\pi\sqrt{7221\times 3.268\cdot 10^{-15}}}=32763$ Hz
+Resonance frequency $f=\frac{1}{2\pi\sqrt{L1\cdot C1}}=\frac{1}{2\pi\sqrt{7221\times 3.268\cdot 10^{-15}}}=32763$ Hz
 
