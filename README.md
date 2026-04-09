@@ -11,7 +11,7 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 ## References:
 
 ### Hardware
-* 32768 Hz tuning fork in transparent package:
+* 32768 Hz tuning fork in transparent package: <a href="https://eu.mouser.com/ProductDetail/Epson-Timing/FC-135-32.7680KA-AC5?qs=f9yNj16SXrLM6nHs1T34rQ%3D%3D">Epson FC-135 32.7680KA-AC5</a>
 * sound card <a href="https://www.amazon.fr/-/en/UGREEN-External-Headphones-Compatible-Raspberry/dp/B08Y8CZB2S/">UGREEN (10.2 euros on amazon)</a>
 
 ### Software
@@ -19,3 +19,16 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 display properly on the Raspberry Pi 5
 * GNU Radio <a href="stroboscopy/snd.grc">flowchart</a> for driving the two channels of the
 stereo sound card.
+
+## Resources:
+
+Equivalent BvD model of the quartz tuning for:
+* R1=53727 $\Omega$
+* L1=7221 H
+* C1=3.268 fF
+* C0=3.368 pF
+
+Quality factor $Q=\frac{1}{R1}\sqrt{\frac{L1}{C1}}=27700$
+
+Resonance frequency $f=\frac{1}{2\pi\sqrt{7221\times 3.268\cdot 10^{-15}}}=32763$ Hz
+
