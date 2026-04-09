@@ -1,7 +1,7 @@
 # European Frequency and Time Seminar (EFTS) quartz tuning fork laboratory session.
 
 A quartz tuning fork packaged in a transparent casing is used to demonstrate
-* closed loop oscillation using a Negative Impedance Converter (NIC) circuit
+* closed loop oscillation using a Negative Impedance Converter (NIC) circuit (<a href="oscillator/oscillateur_1night.png">Allan deviation</a> below $10^{-9}$ up to 30 s integration time).
 * openloop stroboscopic imaging of the quartz prong motion driven by sound card output.
 
 <a href=kicad/>KiCAD</a> board design files.
