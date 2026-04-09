@@ -25,7 +25,7 @@ stereo sound card (tested with GNU Radio 3.10).
 
 ## Resources:
 
-Equivalent BvD model of the quartz tuning for:
+Equivalent BvD model of the quartz tuning fork:
 * R1=53727 $\Omega$
 * L1=7221 H
 * C1=3.268 fF
