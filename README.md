@@ -11,17 +11,18 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 ## References:
 
 ### Hardware
-* 32768 Hz tuning fork in transparent package: <a href="https://eu.mouser.com/ProductDetail/Epson-Timing/FC-135-32.7680KA-AC5?qs=f9yNj16SXrLM6nHs1T34rQ%3D%3D">Epson FC-135 32.7680KA-AC5</a>
+* 32768 Hz tuning fork in transparent package: <a href="https://eu.mouser.com/ProductDetail/Epson-Timing/FC-135-32.7680KA-AC5?qs=f9yNj16SXrLM6nHs1T34rQ%3D%3D">Epson FC-135 32.7680KA-AC5</a> (0.404 euros/p)
 * sound card with sampling rate 96 kHz or higher, e.g. <a href="https://www.amazon.fr/-/en/UGREEN-External-Headphones-Compatible-Raspberry/dp/B08Y8CZB2S/">UGREEN (10.2 euros on amazon)</a>
-* "digital microscope" webcam, e.g. <a href="https://amscope.co.uk/products/c-hhd510-w">AmScope HHD Series</a>
-* 7414 Schmitt trigger
-* 7400 NAND gate
+* "digital microscope" webcam, e.g. <a href="https://amscope.co.uk/products/c-hhd510-w">AmScope HHD Series</a> (~50 euros)
+* 7414 Schmitt trigger (0.5 to 0.7 euros)
+* 7400 NAND gate (0.2 to 0.3 euros)
 
 ### Software
 * use ``mplayer tv://`` to display the webcam output since ``vlc`` does not seem to
 display properly on the Raspberry Pi 5
 * GNU Radio <a href="stroboscopy/snd.grc">flowchart</a> for driving the two channels of the
-stereo sound card (tested with GNU Radio 3.10).
+stereo sound card (tested with GNU Radio 3.10) with 1 Hz offset between the signal driving
+the tuning fork and the stroboscopic signal driving the LED.
 
 ## Resources:
 
