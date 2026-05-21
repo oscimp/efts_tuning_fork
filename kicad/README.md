@@ -13,3 +13,10 @@ the sound card output to maximum amplitude to increase chances of the Schmitt
 trigger toggling. The potentiometer further from the audio input is the negative
 impedance and should be tuned so that the oscillator starts (slowly !) at resonance
 frequency of the tuning fork.
+
+The setup is designed to be assembled on a Rapsberry Pi 4/5:
+
+<img src="assemblage1.png">
+
+<img src="assemblage2.png">
+
