@@ -96,14 +96,14 @@ about 1/10th of the period. Hence, a dedicated pulse generation circuit must be 
 \begin{enumerate}
 \item A tuning fork resonance frequency is 32768~Hz. Find a quartz tuning\\
 fork datasheet: what is the typical quality factor of a packaged tuning \\
-fork~? what is the frequency resolution needed to observe the\\ resonance 
-in a network analyzer configuration~?
+fork? what is the frequency resolution needed to observe the\\ resonance 
+in a network analyzer configuration?
 \item When the tuning fork package is opened and the vibrating element \\
 exposed to air, the quality factor drops 10-fold due to viscous drag. \\What 
 is the frequency resolution needed to observe the resonance \\
 frequency once  the sealed packaging has
-been opened~?
-\item What is a stroboscopic illumination strategy to observe objects moving quickly but periodically~?
+been opened?
+\item What is a stroboscopic illumination strategy to observe objects moving quickly but periodically?
 \end{enumerate}
 }
 
@@ -134,15 +134,15 @@ function between both pulses.
 \begin{enumerate}
 \setcounter{enumi}{3}
 \item Considering the period of the signal driving the tuning fork, what is the RC time constant needed 
-for the stroboscopic signal~?
+for the stroboscopic signal?
 \item the sound card signal is centered on 0~V (AC signal) while the Schmitt trigger requires a signal 
 below a few 100~mV to remain to 0 and otherwise raises its output to the supply voltage. The AC-coupled 
 sound card output is DC-offset using a resistor bridge. To prevent DC-leakage to the sound card output 
-amplifier, a capacitor is introduced. What is the impedance of a capacitor as a function of frequency~? 
+amplifier, a capacitor is introduced. What is the impedance of a capacitor as a function of frequency? 
 select the appropriate capacitor value as a function of the polarizing resistor bridge. What are the 
-conditions for a voltage divider resistor bridge to operate properly~?
+conditions for a voltage divider resistor bridge to operate properly?
 \item Select appropriate component references to assemble the circuit: what integrated circuits provide
-the necessary functions~?
+the necessary functions?
 \end{enumerate}
 }
 
@@ -152,7 +152,7 @@ Two chips are provided in DIL packages: the 7414 Schmitt trigger and the 7400 AN
 \begin{enumerate}
 \setcounter{enumi}{6}
 \item After reading the datasheet of these chips, what is a wiring schematic suitable for implementing the
-pulse generator driving the LED~?
+pulse generator driving the LED?
 \item Simulate the circuit using {\tt ngspice}. The inverting NAND gate can be simulated using the {\tt hyst} function:
 \begin{verbatim}
 .model schmitt hyst(in_low=1.49 in_high=3.51 hyst=0 out_lower_limit=5.0 out_upper_limit=0.0 
@@ -228,7 +228,7 @@ ffplay -i /dev/video0}.
 \setcounter{enumi}{7}
 \item Considering the tuning fork quality factor, we have already addressed the frequency step needed to
 observe the resonance. How quickly can the frequency vary, considering the settling time of the vibration, when
-searching for the resonance frequency by sweeping the sound card output frequency~?
+searching for the resonance frequency by sweeping the sound card output frequency?
 \end{enumerate}
 }
 
@@ -270,7 +270,7 @@ by using {\tt imrotate()}.
 \begin{enumerate}
 \setcounter{enumi}{8}
 \item Motion is detected by searching for matching patterns in \\a ``small'' region of interest between successive images. \\
-What signal processing function is used to detect \\similar patterns between two signals~?
+What signal processing function is used to detect \\similar patterns between two signals?
 \item Apply this mathematical function to one line or \\
 column of the picture displaying the end of the prong: \\
 display the curve of the prong motion over time. The \\
