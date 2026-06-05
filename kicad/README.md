@@ -20,3 +20,6 @@ The setup is designed to be assembled on a Rapsberry Pi 4/5:
 
 <img src="assemblage2.png">
 
+## Schematic
+
+<img src="schematic.png">
