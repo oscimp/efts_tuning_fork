@@ -47,3 +47,5 @@ switching supply:
 ```
 ffmpeg -i vlc-record-2026-05-13-09h10m45s-v4l2____dev_video0-.avi -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 vlc-record-2026-05-13-09h10m45s-v4l2____dev_video0-.gif
 ```
+
+<img src="vlc-record-2026-05-13-09h10m45s-v4l2____dev_video0-.gif">
