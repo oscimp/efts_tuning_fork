@@ -18,7 +18,7 @@ tuning fork with the sound card) and SPDT SW2 1 to 3 (75 ohm load)
 
 <img src="IMG_20260606_140601_950.jpg">
 
-* Adjust the voltage on pin 1 of the 7414 U2A 
+* Adjust the voltage on pin 1 of the 7414 U2A using RV2
 
 <img src="7414_pin1.png">
 
