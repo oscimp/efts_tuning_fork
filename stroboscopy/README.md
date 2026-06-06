@@ -13,6 +13,13 @@
 
 ## Final setup
 
+* On the Raspberry Pi: start the graphical user interface (``startx``),
+open a terminal and launch ``alsamixer`` to check the sound card setting. Using F6,
+select the USB sound card and check that the volume is maximum.
+
+* Quit ``alsamixer`` and launch ``gnuradio-companion`` with the ``snd.grc`` flowgraph.
+Select a frequency around 32764 Hz (a few Hz below 32768).
+
 * Connect SPDT SW1 pin 1 to 2 (openloop measurement by driving the
 tuning fork with the sound card) and SPDT SW2 1 to 3 (75 ohm load)
 
