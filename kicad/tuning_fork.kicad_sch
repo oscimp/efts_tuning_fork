@@ -4074,6 +4074,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -4329,6 +4479,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "reset"
+		(exclude_from_sim no)
+		(at 162.56 35.052 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1e5a358c-09ad-4cb3-9fbb-9be1810163bb")
+	)
+	(text "Argument for the NIC circuit: the current\non pin 5 (+) is determined by the opposite of\nthe impedance connected to 6 (-) so the \nresonator is on 6, and the load resistance\ntuned to dissipate enough to avoid oscillating\nat a random frequency but not too much to prevent\noscillation is on 5."
+		(exclude_from_sim no)
+		(at 195.58 33.274 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fc9d71eb-2fde-4b4b-b1dc-b794f1cd3457")
+	)
 	(text_box "stroboscopic measurement"
 		(exclude_from_sim no)
 		(at 81.915 107.315 0)
@@ -4372,7 +4542,7 @@
 	(text_box "NIC oscillator"
 		(exclude_from_sim no)
 		(at 91.44 24.13 0)
-		(size 123.825 45.085)
+		(size 130.429 45.085)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4385,7 +4555,7 @@
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right top)
+			(justify right bottom)
 		)
 		(uuid "5cd19ccc-8972-4d6a-9182-96d248287da4")
 	)
@@ -4394,6 +4564,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "07f24c5b-8624-4b71-84ba-46bbdb0538d0")
+	)
+	(junction
+		(at 157.48 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bc4ac07-07ab-4632-a136-24464e05fd2e")
 	)
 	(junction
 		(at 157.48 57.15)
@@ -4444,10 +4620,16 @@
 		(uuid "4284fcaa-f52e-4a82-a7c4-c412340682af")
 	)
 	(junction
-		(at 50.8 118.11)
+		(at 73.66 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "50fb6197-d4f0-41f5-a0a0-3be2b41eed97")
+		(uuid "559b366f-0201-4e54-99f5-39880b4febce")
+	)
+	(junction
+		(at 157.48 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68c90eb3-2678-4f1d-8cf8-3e664e176607")
 	)
 	(junction
 		(at 172.72 52.07)
@@ -4456,34 +4638,16 @@
 		(uuid "74fbe601-a3ad-47ef-9e7f-b28aef52fabd")
 	)
 	(junction
-		(at 157.48 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "75971296-2545-44d3-a33f-266d154411b4")
-	)
-	(junction
 		(at 115.57 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c4036c4-fd7a-49d3-b7c1-699238c43e72")
 	)
 	(junction
-		(at 50.8 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85ce027e-55e2-4d21-9415-537066c5a3fd")
-	)
-	(junction
 		(at 46.99 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c0008af-bf0c-4f33-8cb2-7c8f5d532993")
-	)
-	(junction
-		(at 73.66 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "977154a7-7033-4201-9881-b67f2a626c97")
 	)
 	(junction
 		(at 113.03 102.87)
@@ -4534,10 +4698,10 @@
 		(uuid "ccbaa8cc-7e30-4505-9eff-7c6e5271b4ef")
 	)
 	(junction
-		(at 50.8 115.57)
+		(at 56.896 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eea4d548-8f56-453f-a23a-289bf463f826")
+		(uuid "d1df1226-5db7-4506-ab46-6c54bdfb8e13")
 	)
 	(junction
 		(at 172.72 59.69)
@@ -4895,6 +5059,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 32.258) (xy 167.64 34.036)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "582d5aef-62fb-4f8b-aa67-5264c8907dd5")
+	)
+	(wire
+		(pts
 			(xy 172.72 52.07) (xy 176.53 52.07)
 		)
 		(stroke
@@ -4905,7 +5079,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 118.11) (xy 50.8 119.38)
+			(xy 56.896 118.11) (xy 56.896 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4922,6 +5096,16 @@
 			(type default)
 		)
 		(uuid "619aac12-e196-4e8d-b05f-00764b7c6822")
+	)
+	(wire
+		(pts
+			(xy 157.48 32.258) (xy 157.48 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63156b6b-aa5b-4632-ad07-135f0f1ea8a4")
 	)
 	(wire
 		(pts
@@ -5055,7 +5239,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 113.03) (xy 64.77 113.03)
+			(xy 51.308 113.03) (xy 64.77 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5095,7 +5279,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 115.57) (xy 73.66 115.57)
+			(xy 67.056 115.57) (xy 73.66 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5205,16 +5389,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 115.57) (xy 50.8 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba2a3e5c-f5e1-430e-b406-fe1aa819f52c")
-	)
-	(wire
-		(pts
 			(xy 176.53 60.96) (xy 176.53 57.15)
 		)
 		(stroke
@@ -5235,7 +5409,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 118.11) (xy 50.8 118.11)
+			(xy 51.308 118.11) (xy 56.896 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5252,16 +5426,6 @@
 			(type default)
 		)
 		(uuid "c354b585-734a-4bf5-a053-b42e2d5220fb")
-	)
-	(wire
-		(pts
-			(xy 38.1 113.03) (xy 50.8 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c50ccc51-05f9-4872-ae85-d2fcf3378808")
 	)
 	(wire
 		(pts
@@ -5385,7 +5549,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 115.57) (xy 53.34 115.57)
+			(xy 51.308 115.57) (xy 59.436 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5555,7 +5719,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 241.3 50.8 0)
+		(at 196.85 86.614 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5566,7 +5730,7 @@
 		(fields_autoplaced yes)
 		(uuid "05e93528-273e-4beb-86b8-8ceafe6cceff")
 		(property "Reference" "H2"
-			(at 243.84 49.5299 0)
+			(at 199.39 85.3439 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5577,7 +5741,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 243.84 52.0699 0)
+			(at 199.39 87.8839 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5588,7 +5752,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 241.3 50.8 0)
+			(at 196.85 86.614 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5599,7 +5763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 50.8 0)
+			(at 196.85 86.614 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5610,7 +5774,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 241.3 50.8 0)
+			(at 196.85 86.614 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5631,7 +5795,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 119.38 0)
+		(at 56.896 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5642,7 +5806,7 @@
 		(fields_autoplaced yes)
 		(uuid "06aaf463-1293-4823-85a9-d24acf648725")
 		(property "Reference" "#PWR01"
-			(at 50.8 125.73 0)
+			(at 56.896 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5653,7 +5817,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 124.46 0)
+			(at 56.896 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5663,7 +5827,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 119.38 0)
+			(at 56.896 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5674,7 +5838,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 119.38 0)
+			(at 56.896 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5685,7 +5849,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 119.38 0)
+			(at 56.896 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6138,7 +6302,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack3")
-		(at 33.02 115.57 0)
+		(at 46.228 115.57 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6149,7 +6313,7 @@
 		(dnp no)
 		(uuid "258981a6-ebc3-4987-8813-ed4ac45ca2b4")
 		(property "Reference" "J8"
-			(at 25.4 113.6649 0)
+			(at 38.608 113.6649 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6160,7 +6324,7 @@
 			)
 		)
 		(property "Value" "AudioJack3"
-			(at 25.4 116.2049 0)
+			(at 38.608 116.2049 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6171,7 +6335,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Audio:Jack_3.5mm_Lumberg_1503_02_Horizontal"
-			(at 33.02 115.57 0)
+			(at 46.228 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +6346,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 115.57 0)
+			(at 46.228 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6193,7 +6357,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 33.02 115.57 0)
+			(at 46.228 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6379,7 +6543,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 241.3 63.5 0)
+		(at 196.85 99.314 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6390,7 +6554,7 @@
 		(fields_autoplaced yes)
 		(uuid "272827af-7a09-4bc6-97d8-6c9770daf099")
 		(property "Reference" "H4"
-			(at 243.84 62.2299 0)
+			(at 199.39 98.0439 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6401,7 +6565,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 243.84 64.7699 0)
+			(at 199.39 100.5839 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6412,7 +6576,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 241.3 63.5 0)
+			(at 196.85 99.314 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6423,7 +6587,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 63.5 0)
+			(at 196.85 99.314 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6434,7 +6598,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 241.3 63.5 0)
+			(at 196.85 99.314 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6564,6 +6728,162 @@
 			(project "tuning_fork"
 				(path "/dd68df8e-94fa-4696-b0da-c7c64f78a3ac"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 167.64 34.036 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a121e2b-f951-461e-b836-ee9da1a87b83")
+		(property "Reference" "#PWR019"
+			(at 167.64 40.386 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.434 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 34.036 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 34.036 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 34.036 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3423e48e-d768-426f-8c9f-747b9ce499ca")
+		)
+		(instances
+			(project "tuning_fork"
+				(path "/dd68df8e-94fa-4696-b0da-c7c64f78a3ac"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 162.56 32.258 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c9b5df9-0739-4a3c-a169-2f9c1ab814de")
+		(property "Reference" "SW3"
+			(at 158.242 27.178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 158.75 29.464 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-100x"
+			(at 162.56 32.258 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 32.258 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 162.56 32.258 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9388476-28a2-474f-a7ba-f7df46b77111")
+		)
+		(pin "2"
+			(uuid "768c4dbf-28d4-44be-be3c-de3eaa5c30c2")
+		)
+		(instances
+			(project "tuning_fork"
+				(path "/dd68df8e-94fa-4696-b0da-c7c64f78a3ac"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -7911,7 +8231,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 241.3 44.45 0)
+		(at 196.85 80.264 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7922,7 +8242,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e9d80eb-b9c3-4b62-93a3-09f403b7ab8a")
 		(property "Reference" "H1"
-			(at 243.84 43.1799 0)
+			(at 199.39 78.9939 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7933,7 +8253,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 243.84 45.7199 0)
+			(at 199.39 81.5339 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7944,7 +8264,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 241.3 44.45 0)
+			(at 196.85 80.264 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7955,7 +8275,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 44.45 0)
+			(at 196.85 80.264 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7966,7 +8286,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 241.3 44.45 0)
+			(at 196.85 80.264 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8417,7 +8737,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 241.3 57.15 0)
+		(at 196.85 92.964 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8428,7 +8748,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e225486-8577-48c0-a02d-8594bdc16380")
 		(property "Reference" "H3"
-			(at 243.84 55.8799 0)
+			(at 199.39 91.6939 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8439,7 +8759,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 243.84 58.4199 0)
+			(at 199.39 94.2339 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8450,7 +8770,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 241.3 57.15 0)
+			(at 196.85 92.964 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8461,7 +8781,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 57.15 0)
+			(at 196.85 92.964 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8472,7 +8792,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 241.3 57.15 0)
+			(at 196.85 92.964 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8808,7 +9128,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 45.72 115.57 0)
+		(at 51.816 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8816,10 +9136,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bc5aecd4-d1de-47c4-b3ae-fd7f134bd332")
 		(property "Reference" "J1"
-			(at 46.355 107.95 0)
+			(at 52.451 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8829,7 +9148,7 @@
 			)
 		)
 		(property "Value" "AudioIn"
-			(at 46.355 110.49 0)
+			(at 55.118 109.982 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8839,7 +9158,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 45.72 115.57 0)
+			(at 51.816 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8850,7 +9169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 115.57 0)
+			(at 51.816 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8861,7 +9180,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 45.72 115.57 0)
+			(at 51.816 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9992,7 +10311,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 57.15 115.57 90)
+		(at 63.246 115.57 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10002,7 +10321,7 @@
 		(dnp no)
 		(uuid "f9237aa0-022b-43bf-9ae1-2baade1e6421")
 		(property "Reference" "C5"
-			(at 59.944 114.554 90)
+			(at 66.04 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10012,7 +10331,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 57.15 110.49 90)
+			(at 63.246 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10022,7 +10341,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
-			(at 60.96 114.6048 0)
+			(at 67.056 114.6048 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10033,7 +10352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 115.57 0)
+			(at 63.246 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10044,7 +10363,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 57.15 115.57 0)
+			(at 63.246 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
