@@ -26,7 +26,7 @@ the tuning fork and the stroboscopic signal driving the LED.
 
 ## Resources:
 
-Equivalent BvD model of the quartz tuning fork:
+Equivalent BvD model of the quartz tuning fork (see <a href="KeysightE4990A/">the impedance analyzer</a> measurement):
 * R1=53727 $\Omega$
 * L1=7221 H
 * C1=3.268 fF
