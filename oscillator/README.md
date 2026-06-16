@@ -14,7 +14,8 @@ integration time.
 
 ## Setup
 
-C4 was fitted with a 1 nF capacitor.
+C4 was fitted with a 1 nF capacitor. In case the oscillator fails to start even at
+the highest potentiometer value, remove C4.
 
 * Close SW1 pin 2 and 3 to connect the tuning fork to the negative impedance converter circuit.
 

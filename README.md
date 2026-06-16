@@ -18,6 +18,7 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 * 7400 NAND gate (0.2 to 0.3 euros)
 
 ### Software
+
 * use ``mplayer tv://`` to display the webcam output since ``vlc`` does not seem to
 display properly on the Raspberry Pi 5
 * GNU Radio <a href="stroboscopy/snd.grc">flowchart</a> for driving the two channels of the
@@ -36,3 +37,4 @@ Quality factor $Q=\frac{1}{R1}\sqrt{\frac{L1}{C1}}=27700$
 
 Resonance frequency $f=\frac{1}{2\pi\sqrt{L1\cdot C1}}=\frac{1}{2\pi\sqrt{7221\times 3.268\cdot 10^{-15}}}=32763$ Hz
 
+<img src="IMG_20260616_071208_589.jpg">
