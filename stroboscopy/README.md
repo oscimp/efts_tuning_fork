@@ -56,3 +56,19 @@ ffmpeg -i vlc-record-2026-05-13-09h10m45s-v4l2____dev_video0-.avi -vf "fps=10,sc
 ```
 
 <img src="vlc-record-2026-05-13-09h10m45s-v4l2____dev_video0-.gif">
+
+## Automated mechanical displacement amplitude measurement
+
+The script ``analyze.py`` replaces ``mplayer`` or ``vlc`` for collecting and displaying
+images, but additionnally analyzes the displacement by correlating a reference measurement
+in the first frame with all subsequent frames at the same location, marked with a green
+line on each frame. The position and orientation of the green line is hardcoded, so the
+tuning fork should be moved until one of the prongs is intersected by the green line. The
+position is displayed in the terminal along the amplitude identified as the standard deviation
+of a ring buffer collecting the position measurements. Copy-pasting the values displayed in 
+the terminal in plotting (e.g. GNU Octave as shown below) allows for recovering the sine-shaped
+motion of the prong.
+
+<img src="2026-06-19-155034_2704x1050_scrot.png">
+
+Executing ``analyze.py`` assumes that the package ``python3-opencv`` is installed.
