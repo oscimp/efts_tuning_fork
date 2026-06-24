@@ -19,11 +19,14 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 
 ### Software
 
-* use ``mplayer tv://`` to display the webcam output since ``vlc`` does not seem to
-display properly on the Raspberry Pi 5
+* use ``mplayer tv://`` to display the webcam output (or ``vlc`` if it displays properly in the
+selected window manager): allows for stretching the image to full screen even if recording a "poor" 
+webcam resolution (640x480) stream from the digital microscope.
 * GNU Radio <a href="stroboscopy/snd.grc">flowchart</a> for driving the two channels of the
 stereo sound card (tested with GNU Radio 3.10) with 1 Hz offset between the signal driving
 the tuning fork and the stroboscopic signal driving the LED.
+* Maybe wise to ``echo "performance" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`` 
+to run the CPUs at maximum speed (will heat to 65 degC).
 
 ## Resources:
 
