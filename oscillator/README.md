@@ -1,4 +1,5 @@
-See http://jmfriedt.free.fr/08520429.pdf for the description of the negative impedance circuit.
+See http://jmfriedt.free.fr/08520429.pdf for the description of the negative impedance circuit (Fig.3, page 7 of the PDF)
+even though here any operational amplifier (e.g. TL72, TL82) will allow the 32768 Hz oscillator to start.
 
 # Closed loop oscillator circuit
 
