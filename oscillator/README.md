@@ -1,3 +1,5 @@
+See http://jmfriedt.free.fr/08520429.pdf for the description of the negative impedance circuit.
+
 # Closed loop oscillator circuit
 
 The startup time can be as long as a few minutes (hundreds of seconds).
@@ -38,3 +40,11 @@ channel) the oscillator returned to the -4V fixed value:
 
 <img src="Screenshot_2026-06-06_2_141429.png">
 
+## Oscillator startup time
+
+The oscillator starts by amplifying thermal noise until the non-linear (saturation) behaviour of the amplifier compensating
+the resonator losses is reached, preventing further amplitude growth.
+1. the thermal noise in the resonator bandwidth is $\sqrt{R1.k_B.T.B}$ with $R1=53727 ohms and $B$ the resonator bandwidth $f0/Q\simeq 1$ Hz
+so that the initial thermal voltage noise is 15 nV
+2. the final amplitude is 1 V (see screenshots) reached by an exponential growth $\exp(t/\tau)$ with $\tau=Q/(\pi f0)\simeq 0.3$ s: $-ln(15e-9)=18$ so the startup time constant is about 6 seconds
+3. the resonator $R1$ is compensated for by the NIC negative impedance $-RN$ and oscillation occurs if $|RN|<R1$. Stating $GN=1/RN$ and $G1=1/R1$, the excess gain is $GN-GP$ and the startup time is scaled by $G1/(GN-G1)$ which can become significant if $GN-G1\rightarrow 0$
