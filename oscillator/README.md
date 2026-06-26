@@ -48,4 +48,10 @@ the resonator losses is reached, preventing further amplitude growth.
 1. the thermal noise in the resonator bandwidth is $\sqrt{R_1.k_B.T.B}$ with $R1=53727$ ohms and $B$ the resonator bandwidth $f0/Q\simeq 1$ Hz
 so that the initial thermal voltage noise is 15 nV
 2. the final amplitude is 1 V (see screenshots) reached by an exponential growth $\exp(t/\tau)$ with $\tau=Q/(\pi f0)\simeq 0.3$ s: $-ln(15e-9)=18$ so the startup time constant is about 6 seconds
-3. the resonator $R1$ is compensated for by the NIC negative impedance $-RN$ and oscillation occurs if $|RN|<R1$. Stating $GN=1/RN$ and $G1=1/R1$, the excess gain is $GN-GP$ and the startup time is scaled by $G1/(GN-G1)$ which can become significant if $GN-G1\rightarrow 0$
+3. the resonator $R_1$ is compensated for by the NIC negative impedance $-R_N$ and oscillation occurs if $|R_N|<R_1$. Stating $G_N=1/R_N$ and $G_1=1/R_1$, the excess gain is $G_N-G_1$ and the startup time is scaled by $G_1/(G_N-G_1)$ which can become significant if $G_N-G_1\rightarrow 0$
+
+### Demonstration
+
+* A voltage $V$ develops accross the resonator so that the losses are $P_{loss}=V^2.G_1$ with $G_1=1/R_1$ at resonance where the BvD model only includes the motional resistance
+* the NIC behaves as $-R_N$ so the power injected by the NIC is $P_{NIC}=V^2.G_N$
+* the budget is $P_{NIC}-P_{loss}=V^2(G_N-G_1)$ and the power is the energy variation so $dE/dt=V^2(G_N-G_1)$ and since $E\propto V^2$ then $dV/dt=(G_N-G_1)V$ with a solution $V(t)=\exp(At)$ with $A\propto G_N-G_1$ as was the case for $1/\tau$ before.
