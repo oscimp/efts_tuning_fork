@@ -44,7 +44,7 @@ to illuminate briefly the tuning fork:
 <img src="led.png">
 <img src="led_zoom.png">
 
-* check that the signal driving the tuning fork reaches the pin closes to the DC-DC
+* check that the signal driving the tuning fork reaches the pin closest to the DC-DC
 switching supply:
 
 <img src="tuning_fork_voltage.png">
@@ -81,7 +81,7 @@ Executing ``analyze.py`` assumes that the package ``python3-opencv`` is installe
 
 Running a constant tone at the tuning fork resonance frequency on a Raspberry Pi 4 and
 monitoring the current through the 50 kohm resistor between the tuning fork and ground exhibits
-some unexpected jumps attributed to unstable signal generation by the sound cart:
+some unexpected jumps attributed to unstable signal generation by the sound card:
 
 <img src="Screenshot_RPi4.png">
 
