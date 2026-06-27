@@ -17,6 +17,9 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 * 7414 Schmitt trigger (0.5 to 0.7 euros)
 * 7400 NAND gate (0.2 to 0.3 euros)
 
+**Note**: the single board computer **must** be a RPi5 and **not** a RPi4 whose USB bus is too unstable to generate a clean audio signal probing
+the narrow tuning fork resonance. See the <a href="stroboscopy">stroboscopy</a> subdirectory for the demonstration.
+
 ### Software
 
 * use ``mplayer tv://`` to display the webcam output (or ``vlc`` if it displays properly in the
