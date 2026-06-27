@@ -66,9 +66,25 @@ line on each frame. The position and orientation of the green line is hardcoded,
 tuning fork should be moved until one of the prongs is intersected by the green line. The
 position is displayed in the terminal along the amplitude identified as the standard deviation
 of a ring buffer collecting the position measurements. Copy-pasting the values displayed in 
-the terminal in plotting (e.g. GNU Octave as shown below) allows for recovering the sine-shaped
+the terminal for plotting (e.g. GNU Octave as shown below) allows for recovering the sine-shaped
 motion of the prong.
 
 <img src="2026-06-19-155034_2704x1050_scrot.png">
 
 Executing ``analyze.py`` assumes that the package ``python3-opencv`` is installed.
+
+## Problem with the RPi4 USB interface
+
+Running a constant tone at the tuning fork resonance frequency on a Raspberry Pi 4 and
+monitoring the current through the 50 kohm resistor between the tuning fork and ground exhibits
+some unexpected jumps attributed to unstable signal generation by the sound cart:
+
+<img src="Screenshot_RPi4.png">
+
+most probably attributed to the poor latency performance of the RPi4 USB.
+
+Same experiment on the Raspberry Pi 5, except at the end (80 s abscissa) when the frequency
+was shifted by -2 Hz and back +2Hz to checked that indeed the sound card was probing the 
+tuning fork.
+
+<img src="Screenshot_RPi5.png">
