@@ -1,6 +1,10 @@
 # Experimental setup: adjusting the LED position to illuminate the tuning fork
 
 ## Preliminary tests 
+
+Notice that this picture is misleading as it shows a Raspberry Pi 4 which should
+be avoided (see the bottom of this page) and replaced with a Raspberry Pi 5.
+
 <img src="IMG_20260409_120540_544.jpg">
 
 <img src="IMG_20260409_131427_507.jpg">
