@@ -97,3 +97,15 @@ was shifted by -2 Hz and back +2Hz on purpose to check that indeed the sound car
 tuning fork.
 
 <img src="Screenshot_RPi5.png">
+
+Update Sept. 2026: long term measurements on the RPi5 also show some glitches on the sound card output
+
+<img src="RPi5_32765Hz.png">
+
+although less pronounced than on the RPi4 under the same conditions.
+
+<img src="RPi4_32768Hz.png">
+
+A Scarlett Focusrite 18i8 provides much improved stability (and additional bandwidth and 24-bit quantization, at 10x the cost):
+
+<img src="RPi5_32765Hz_Focusrite.png">
