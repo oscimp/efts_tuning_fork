@@ -12,7 +12,8 @@ A quartz tuning fork packaged in a transparent casing is used to demonstrate
 
 ### Hardware (using a <a href="stroboscopy/IMG_20260409_120540_544.jpg">Raspberry Pi5</a> single board computer for running GNU Radio for controlling the sound card and recording the video stream):
 * 32768 Hz tuning fork in transparent package: <a href="https://eu.mouser.com/ProductDetail/Epson-Timing/FC-135-32.7680KA-AC5?qs=f9yNj16SXrLM6nHs1T34rQ%3D%3D">Epson FC-135 32.7680KA-AC5</a> (0.404 euros/p)
-* sound card with sampling rate 96 kHz or higher, e.g. <a href="https://www.amazon.fr/-/en/UGREEN-External-Headphones-Compatible-Raspberry/dp/B08Y8CZB2S/">UGREEN (10.2 euros on amazon)</a>
+* sound card with sampling rate 96 kHz or higher, e.g. <a href="https://www.amazon.fr/-/en/UGREEN-External-Headphones-Compatible-Raspberry/dp/B08Y8CZB2S/">UGREEN (10.2 euros on amazon)</a> although a <a href="http://www.thomann.fr/focusrite_scarlett_solo_3rd_gen.htm">Focusrite Scarlett Solo</a>
+(89 euros but 192 kS/s at 24 bits) might be a wiser choice if can be afforded (see <a href="stroboscopy/">bottom of this page</a>).
 * "digital microscope" webcam, e.g. <a href="https://amscope.co.uk/products/c-hhd510-w">AmScope HHD Series</a> (~50 euros)
 * 7414 Schmitt trigger (0.5 to 0.7 euros)
 * 7400 NAND gate (0.2 to 0.3 euros)
