@@ -93,7 +93,7 @@ some unexpected jumps attributed to unstable signal generation by the sound card
 most probably attributed to the poor latency performance of the RPi4 USB.
 
 Same experiment on the Raspberry Pi 5, except at the end (80 s abscissa) when the frequency
-was shifted by -2 Hz and back +2Hz to checked that indeed the sound card was probing the 
+was shifted by -2 Hz and back +2Hz on purpose to check that indeed the sound card was probing the 
 tuning fork.
 
 <img src="Screenshot_RPi5.png">
