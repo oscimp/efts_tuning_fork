@@ -69,11 +69,16 @@ in the first frame with all subsequent frames at the same location, marked with 
 line on each frame. The position and orientation of the green line is hardcoded, so the
 tuning fork should be moved until one of the prongs is intersected by the green line. The
 position is displayed in the terminal along the amplitude identified as the standard deviation
-of a ring buffer collecting the position measurements. Copy-pasting the values displayed in 
-the terminal for plotting (e.g. GNU Octave as shown below) allows for recovering the sine-shaped
-motion of the prong.
+of a ring buffer collecting the position measurements. The pixel position is also saved in
+``/tmp/pixel`` for plotting (e.g. GNU Octave as shown below) allows for recovering the sine-shaped
+motion of the prong
 
 <img src="2026-06-19-155034_2704x1050_scrot.png">
+
+or using the GNUPlot script ``displ.plt`` which refreshes every second with the last 40
+samples (vibration amplitude analysis window).
+
+<img src="260902_RPi4.png">
 
 Executing ``analyze.py`` assumes that the package ``python3-opencv`` is installed.
 
