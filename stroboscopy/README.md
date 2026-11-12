@@ -82,6 +82,16 @@ samples (vibration amplitude analysis window).
 
 Executing ``analyze.py`` assumes that the package ``python3-opencv`` is installed.
 
+## Mechanical v.s electrical transfer function and quality factor
+
+* The electrical and mechanical transfer functions match
+* When driving the tuning fork with too large a voltage, the prongs hit each other at maximum
+amplitude since the displacement is multiplied by the quality factor, and both mechanical
+and electrical transfer functions saturate
+* The electrical quality factor is determined by the mechanical quality factor
+
+<img src="measurement.png">
+
 ## Problem with the RPi4 USB interface
 
 Running a constant tone at the tuning fork resonance frequency on a Raspberry Pi 4 and
